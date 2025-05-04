@@ -1,0 +1,2 @@
+F:/BAUET/SE/PROJECT/mindbridge/android/app/.cxx/Debug/53151e70/x86/CMakeFiles/edit_cache.dir
+F:/BAUET/SE/PROJECT/mindbridge/android/app/.cxx/Debug/53151e70/x86/CMakeFiles/rebuild_cache.dir
