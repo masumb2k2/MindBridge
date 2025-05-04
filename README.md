@@ -42,8 +42,10 @@ MindBridge is a mobile application designed to bridge the gap between individual
 ---
 
 ## 📸 Screenshots
+![1](https://github.com/user-attachments/assets/bf6ce39d-97c7-4903-b932-e4dfb950a606)
+![4](https://github.com/user-attachments/assets/e2b2e3bd-ee5b-4bec-9dc3-9d72b1e03e1d)
 
-*Include relevant screenshots of the app here.*
+
 
 ---
 
