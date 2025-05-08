@@ -1,8 +1,9 @@
+import 'package:MindBridge/doctor/widget/doctor_chatlist_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:practice/dev_phase.dart';
+import 'package:MindBridge/dev_phase.dart';
 
-import 'package:practice/profile_page.dart';
+import 'package:MindBridge/profile_page.dart';
 
 import 'doctor_profile.dart';
 import 'doctor_requests_page.dart';
@@ -20,7 +21,7 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
 
   final List<Widget> _children = [
     DoctorRequestsPage(),
-    DevelopmentPhasePage(),
+    PatientsChatlistPage(),
     ProfilePage(),
   ];
 

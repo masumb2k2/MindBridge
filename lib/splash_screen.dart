@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practice/auth/login_page.dart';
-import 'package:practice/doctor/doctor_home_page.dart';
-import 'package:practice/patient/patient_home_page.dart';
+import 'package:MindBridge/auth/login_page.dart';
+import 'package:MindBridge/doctor/doctor_home_page.dart';
+import 'package:MindBridge/patient/patient_home_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override

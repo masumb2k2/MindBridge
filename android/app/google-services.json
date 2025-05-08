@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1022858493789",
-    "project_id": "mindbrige-3a763",
-    "storage_bucket": "mindbrige-3a763.firebasestorage.app"
+    "project_number": "81760957728",
+    "project_id": "mindbridge-ce499",
+    "storage_bucket": "mindbridge-ce499.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1022858493789:android:d03b5bb68f8168d5cef2b4",
+        "mobilesdk_app_id": "1:81760957728:android:598f461f2e232147c7d345",
         "android_client_info": {
           "package_name": "com.example.mindbridge"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyACH4RoBlNXFudjvqtLQwTH2b7C2iLrsDE"
+          "current_key": "AIzaSyABNBTmtaW1inZYoCYh06LIg7vnntn0UkY"
         }
       ],
       "services": {

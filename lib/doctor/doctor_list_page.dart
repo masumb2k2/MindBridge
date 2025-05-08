@@ -1,9 +1,9 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practice/doctor/doctor_details_page.dart';
-import 'package:practice/doctor/model/doctor.dart';
-import 'package:practice/doctor/widget/doctor_card.dart';
+import 'package:MindBridge/doctor/doctor_details_page.dart';
+import 'package:MindBridge/doctor/model/doctor.dart';
+import 'package:MindBridge/doctor/widget/doctor_card.dart';
 
 class DoctorListPage extends StatefulWidget {
   const DoctorListPage({super.key});

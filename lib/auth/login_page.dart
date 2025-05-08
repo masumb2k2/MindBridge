@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:practice/auth/signup_screen.dart';
-import 'package:practice/doctor/doctor_home_page.dart';
-import 'package:practice/patient/patient_home_page.dart';
+import 'package:MindBridge/auth/signup_screen.dart';
+import 'package:MindBridge/doctor/doctor_home_page.dart';
+import 'package:MindBridge/patient/patient_home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});

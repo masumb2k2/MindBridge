@@ -3,8 +3,9 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
-import 'package:practice/dev_phase.dart';
+import 'package:MindBridge/dev_phase.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../chat_screen.dart';
 import 'model/doctor.dart';
 
 class DoctorDetailPage extends StatefulWidget {
@@ -117,7 +118,11 @@ class _DoctorDetailPageState extends State<DoctorDetailPage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => DevelopmentPhasePage(),
+                                  builder: (context) => ChatScreen(
+                                    doctorId: widget.doctor.uid,
+                                    doctorName: docName,
+                                    patientId: currentUserId,
+                                  ),
                                 ),
                               );
                             },

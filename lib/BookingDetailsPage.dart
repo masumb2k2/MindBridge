@@ -5,14 +5,14 @@ import 'package:MindBridge/auth/login_page.dart';
 
 import 'doctor/model/booking.dart';
 
-class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+class BookingDetailsPage extends StatefulWidget {
+  const BookingDetailsPage({super.key});
 
   @override
-  State<ProfilePage> createState() => _ProfilePageState();
+  State<BookingDetailsPage> createState() => _BookingDetailsPageState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _BookingDetailsPageState extends State<BookingDetailsPage> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final DatabaseReference _requestDatabase = FirebaseDatabase.instance.ref().child('Requests');
   List<Booking> _bookings = [];
@@ -53,19 +53,19 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  void _logout() async {
-    await _auth.signOut();
-    Navigator.of(context).pushAndRemoveUntil(
-        MaterialPageRoute(builder: (context) => LoginPage()),
-        (Route<dynamic> route) => false);
-  }
+  // void _logout() async {
+  //   await _auth.signOut();
+  //   Navigator.of(context).pushAndRemoveUntil(
+  //       MaterialPageRoute(builder: (context) => LoginPage()),
+  //       (Route<dynamic> route) => false);
+  // }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Profile',style: TextStyle(fontWeight: FontWeight.w700,color: Color(0xff005FEE),),),
-        actions: [IconButton(onPressed: _logout, icon: Icon(Icons.logout,color: Color(0xff005FEE),size: 30, ))],
+        title: Text('Booking Details',style: TextStyle(fontWeight: FontWeight.w700,color: Color(0xff005FEE),),),
+        // actions: [IconButton(onPressed: _logout, icon: Icon(Icons.logout,color: Color(0xff005FEE),size: 30, ))],
       ),
       body: _isLoading
           ? Center(child: CircularProgressIndicator())
