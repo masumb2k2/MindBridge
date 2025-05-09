@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:MindBridge/dev_phase.dart';
 
-import 'package:MindBridge/profile_page.dart';
 
+
+import '../BookingDetailsPage.dart';
+import '../ProfilePage.dart';
 import 'doctor_profile.dart';
 import 'doctor_requests_page.dart';
 
@@ -22,7 +24,8 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
   final List<Widget> _children = [
     DoctorRequestsPage(),
     PatientsChatlistPage(),
-    ProfilePage(),
+    BookingDetailsPage(),
+    ProfilePage()
   ];
 
   void _onItmTapped(int index) {
@@ -63,28 +66,30 @@ class _DoctorHomePageState extends State<DoctorHomePage> {
       child: Scaffold(
         body: _children.elementAt(_selectedIndex),
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: Color(0xff006AFA),
-          unselectedItemColor: Color(0xffBEBEBE),
+          type: BottomNavigationBarType.fixed, // Needed for more than 3 items
+          backgroundColor: const Color(0xff006AFA),
+          unselectedItemColor: const Color(0xffBEBEBE),
+          selectedItemColor: Colors.white,
+          currentIndex: _selectedIndex,
+          onTap: _onItmTapped,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home_filled,
-                ),
-                label: 'Home'),
+              icon: Icon(Icons.home_filled),
+              label: 'Home',
+            ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.chat,
-                ),
-                label: 'Chat'),
+              icon: Icon(Icons.chat),
+              label: 'Chat',
+            ),
             BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                ),
-                label: 'Profile'),
+              icon: Icon(Icons.book_online),
+              label: 'Booking',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: 'Profile',
+            ),
           ],
-          currentIndex: _selectedIndex,
-          selectedItemColor: Colors.white,
-          onTap: _onItmTapped,
         ),
       ),
     );

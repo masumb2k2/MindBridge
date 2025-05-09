@@ -6,23 +6,22 @@ import 'package:MindBridge/doctor/doctor_list_page.dart';
 
 import '../BookingDetailsPage.dart';
 import '../ProfilePage.dart';
-import '../doctor/widget/doctor_chatlist_page.dart';
-import 'chat_list_page.dart';
+import 'control_PAGE.dart';
 
-class PatientHomePage extends StatefulWidget {
-  const PatientHomePage({super.key});
+
+
+class AdminHomePage extends StatefulWidget {
+  const AdminHomePage({super.key});
 
   @override
-  State<PatientHomePage> createState() => _PatientHomePageState();
+  State<AdminHomePage> createState() => _AdminHomePageState();
 }
 
-class _PatientHomePageState extends State<PatientHomePage> {
+class _AdminHomePageState extends State<AdminHomePage> {
   int _selectedIndex = 0;
 
   final List<Widget> _children = [
-    DoctorListPage(),
-    ChatListPage(),
-    BookingDetailsPage(),
+    UserManagementPage(),
     ProfilePage(),
   ];
 
@@ -63,7 +62,6 @@ class _PatientHomePageState extends State<PatientHomePage> {
           unselectedItemColor: const Color(0xffBEBEBE),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.chat), label: 'Chat'),
             BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'Booking'), // <- New Item
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
           ],
