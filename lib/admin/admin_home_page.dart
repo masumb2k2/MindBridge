@@ -6,6 +6,8 @@ import 'package:MindBridge/doctor/doctor_list_page.dart';
 
 import '../BookingDetailsPage.dart';
 import '../ProfilePage.dart';
+import 'Logout Page.dart';
+import 'admin_add_user_page.dart';
 import 'control_PAGE.dart';
 
 
@@ -22,7 +24,8 @@ class _AdminHomePageState extends State<AdminHomePage> {
 
   final List<Widget> _children = [
     UserManagementPage(),
-    ProfilePage(),
+    AdminAddUserPage(),
+    LogoutPage()
   ];
 
   void _onItmTapped(int index) {
@@ -62,8 +65,8 @@ class _AdminHomePageState extends State<AdminHomePage> {
           unselectedItemColor: const Color(0xffBEBEBE),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: 'Home'),
-            BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'Booking'), // <- New Item
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+            BottomNavigationBarItem(icon: Icon(Icons.calendar_today), label: 'ADD User'), // <- New Item
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'LogOUt'),
           ],
           currentIndex: _selectedIndex,
           selectedItemColor: Colors.white,
